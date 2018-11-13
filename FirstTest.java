@@ -1,5 +1,4 @@
 package ru.deliveryClub;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,6 +21,7 @@ public class FirstTest {
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("«Delivery Club» — круглосуточная доставка из любимых ресторанов города"));
     }
+    
     @After
     public void close() {
         driver.quit();
