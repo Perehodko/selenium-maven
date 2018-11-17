@@ -1,5 +1,4 @@
 package ru.deliveryClub;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,8 +10,8 @@ public class ClickLinkByText {
     public ChromeDriver driver;
 
     @Before
-    public void setUp(){
-        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+    public void setUp() {
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
