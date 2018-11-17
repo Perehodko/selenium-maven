@@ -17,7 +17,8 @@ public class ClickLinkByClassName {
     @Test
     public void firstTest() {
         driver.get("https://www.google.com/");
-        //класс gb_P относится к ссылке Почта
+        
+        //класс gb_P = переход по ссылке Почта
         driver.findElement(By.className("gb_P")).click();
 
         String currentURL = driver.getCurrentUrl();
