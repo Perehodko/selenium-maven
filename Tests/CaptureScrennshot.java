@@ -14,7 +14,7 @@ public class CaptureScrennshot {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -24,7 +24,7 @@ public class CaptureScrennshot {
 
         File screenFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            Files.copy(screenFile, new File("C:\\Users\\Надя\\Desktop\\screen.png"));
+            Files.copy(screenFile, new File("C:\\Users\\Nadya\\Desktop\\screen.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
