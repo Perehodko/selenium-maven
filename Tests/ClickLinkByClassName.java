@@ -9,8 +9,8 @@ public class ClickLinkByClassName {
     public ChromeDriver driver;
 
     @Before
-    public void setUp(){
-        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+    public void setUp() {
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
