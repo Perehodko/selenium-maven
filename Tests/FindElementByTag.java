@@ -11,7 +11,7 @@ public class FindElementByTag {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -29,7 +29,6 @@ public class FindElementByTag {
 
     @After
     public void close() {
-
         driver.quit();
     }
 }
