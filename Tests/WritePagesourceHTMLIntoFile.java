@@ -15,7 +15,7 @@ public class WritePagesourceHTMLIntoFile {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -27,7 +27,7 @@ public class WritePagesourceHTMLIntoFile {
        System.out.println(source);
 
         try {
-            File newTextFile = new File("C:\\Users\\Надя\\Desktop\\Test.txt");
+            File newTextFile = new File("C:\\Users\\Nadya\\Desktop\\Test.txt");
             FileWriter fw = new FileWriter(newTextFile);
 
             fw.write(source);
