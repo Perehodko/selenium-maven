@@ -12,7 +12,7 @@ public class SwitchBrowserTabs {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -25,7 +25,7 @@ public class SwitchBrowserTabs {
         driver.get("https://www.google.com/");
         System.out.println(driver.getTitle());
 
-        driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "\t");
+        driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
         driver.get("https://www.yandex.ru/");
         System.out.println(driver.getTitle());
     }
