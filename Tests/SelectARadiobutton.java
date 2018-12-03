@@ -20,7 +20,8 @@ public class SelectARadiobutton {
     @Test
     public void firstTest() {
         driver.get("https://yandex.ru/portal/video?source=tabbar&redircnt=1543154779.1&stream_channel=1536653652&stream_active=storefront");
-
+        
+        //заносим в список все эелементы (вкладки), по которым хотим прокликать
         String[] XPAthList = {
                 "/html/body/div[1]/div/div/div[4]/div/div/ul/li[1]/span[1]",
                 "/html/body/div[1]/div/div/div[4]/div/div/ul/li[2]/span[1]",
@@ -29,7 +30,8 @@ public class SelectARadiobutton {
                 "/html/body/div[1]/div/div/div[4]/div/div/ul/li[5]/span[1]",
                 "/html/body/div[1]/div/div/div[4]/div/div/ul/li[6]/span[1]",
                 "/html/body/div[1]/div/div/div[4]/div/div/ul/li[7]/span[1]"};
-
+        
+        //последовательное нажатие по элементам из списка
         try {
             for (int i = 0; i < XPAthList.length ; i++) {
                 WebElement element = driver.findElement(By.xpath(XPAthList[i]));
