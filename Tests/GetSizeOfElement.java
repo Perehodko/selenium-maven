@@ -1,5 +1,6 @@
 package ru.deliveryClub;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -22,6 +23,10 @@ public class GetSizeOfElement {
         Dimension dimension = driver.findElement(By.id("searchInput")).getSize();
         System.out.println("Длина строки поиска: " + dimension.width);
         System.out.println("Высота строки поиска: " + dimension.height);
+    }
 
+    @After
+    public void close() {
+        driver.close();
     }
 }
