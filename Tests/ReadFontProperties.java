@@ -12,10 +12,10 @@ public class ReadFontProperties {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
-
     }
+    
     @Test
     public void test() {
         driver.get("https://www.facebook.com/");
@@ -34,6 +34,7 @@ public class ReadFontProperties {
         String fontFamily = element.getCssValue("font-family");
         System.out.println("Font family: " + fontFamily);
     }
+    
     @After
     public void close() {
         driver.close();
