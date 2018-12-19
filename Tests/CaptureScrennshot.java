@@ -24,7 +24,8 @@ public class CaptureScrennshot {
 
         File screenFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            Files.copy(screenFile, new File("C:\\Users\\Nadya\\Desktop\\screen.png"));
+            //копирую скриншот в директорию C:\Users\Nadya\Desktop\Screens
+            Files.copy(screenFile, new File("C:\\Users\\Nadya\\Desktop\\\Screens\\screen.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
