@@ -26,7 +26,7 @@ public class ClearTextarea {
         try {
             //ождание 5 сек
             Thread.sleep(5000);
-            //очищаем поле
+            //очищаем поле ввода
             driver.findElement(By.cssSelector("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input")).clear();
         }
         catch (Exception e) {
