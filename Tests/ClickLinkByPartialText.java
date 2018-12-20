@@ -19,11 +19,12 @@ public class ClickLinkByPartialText {
     @Test
     public void firstTest() {
         driver.get("https://en.wikipedia.org/wiki/Main_Page");
+        
         //поиск по частичному тексту линка, находящегося в элементе
         driver.findElement(By.partialLinkText("Terms")).click();
 
         String currentURL = driver.getCurrentUrl();
-        System.out.println(currentURL);
+        Assert.assertEquals("https://foundation.wikimedia.org/wiki/Terms_of_Use/en", currentURL);
     }
 
     @After
