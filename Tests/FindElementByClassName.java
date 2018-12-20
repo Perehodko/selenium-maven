@@ -20,7 +20,8 @@ public class FindElementByClassName {
         driver.get("https://www.google.com/");
 
         try {
-            driver.findElement(By.className("SDkEP")).click();
+            driver.findElement(By.className("SDkEP"));
+            System.out.println("Элемент найден");
         }
         catch (Exception e) {
             System.out.println("Элемент не найден");
