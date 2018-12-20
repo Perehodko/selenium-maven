@@ -10,19 +10,19 @@ public class ClickLinkXPathLocator {
     public ChromeDriver driver;
 
     @Before
-    public void setUp(){
-        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @Test
     public void firstTest() {
         driver.get("https://www.google.com/?hl=en");
-
+        //поиск по xpath locator
         driver.findElement(By.xpath("//a[text()='Privacy']")).click();
 
         String currentURL = driver.getCurrentUrl();
-        System.out.println(currentURL);
+        Assert.assertEquals("https://policies.google.com/privacy?hl=en&gl=ru", currentURL);
     }
 
     @After
