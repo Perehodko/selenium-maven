@@ -18,7 +18,7 @@ public class ClickLinkByXPathClass {
     @Test
     public void firstTest() {
         driver.get("https://www.google.com/?hl=en");
-        //поиск по xpath locator
+        //поиск по xpath class
         driver.findElement(By.xpath("//a[@class='gb_P']")).click();
 
         String currentURL = driver.getCurrentUrl();
