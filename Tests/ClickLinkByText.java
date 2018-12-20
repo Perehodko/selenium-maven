@@ -11,19 +11,18 @@ public class ClickLinkByText {
 
     @Before
     public void setUp() {
-        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @Test
     public void firstTest() {
         driver.get("https://www.google.com/");
-
+        //поиск по тексту ссылки
         driver.findElement(By.linkText("Почта")).click();
 
         String currentURL = driver.getCurrentUrl();
-        System.out.println(currentURL);
-
+        Assert.assertEquals("https://www.google.com/intl/ru/gmail/about/#", currentURL);
     }
 
     @After
