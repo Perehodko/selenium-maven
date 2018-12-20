@@ -22,7 +22,7 @@ public class ClickLinkByClassName {
         driver.findElement(By.className("gb_P")).click();
 
         String currentURL = driver.getCurrentUrl();
-        System.out.println(currentURL);
+        Assert.assertEquals("https://www.google.com/intl/ru/gmail/about/#", currentURL);
     }
 
     @After
