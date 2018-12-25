@@ -11,7 +11,7 @@ public class GetBrowserType {
 
     @Before
     public void setUp() {
-        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -20,7 +20,7 @@ public class GetBrowserType {
         Capabilities caps = ((RemoteWebDriver)driver).getCapabilities();
         String browserName = caps.getBrowserName();
         String browserVersion = caps.getVersion();
-        System.out.println(browserName+ "" +browserVersion);
+        System.out.println("Браузер: " + browserName+ " " + "версия " +browserVersion);
     }
 
     @After
