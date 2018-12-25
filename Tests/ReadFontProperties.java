@@ -1,5 +1,4 @@
 package ru.deliveryClub;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -13,7 +12,7 @@ public class ReadFontProperties {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Надя\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nadya\\Downloads\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
@@ -35,6 +34,7 @@ public class ReadFontProperties {
         Assert.assertEquals("Helvetica, Arial, sans-serif", fontFamily);
         System.out.println("Font family: " + fontFamily);
     }
+    
     @After
     public void close() {
         driver.close();
