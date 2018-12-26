@@ -22,6 +22,7 @@ public class TableRowCount {
         driver.get("https://en.wikipedia.org/wiki/Leopard_seal");
 
         List<WebElement> txt = (List<WebElement>) driver.findElements(By.cssSelector("table.infobox.biota>tbody>tr"));
+        Assert.assertEquals(22, txt.size());
         System.out.println("Количество строк в таблице: " + txt.size());
     }
 
