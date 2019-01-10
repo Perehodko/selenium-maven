@@ -1,2 +1,2 @@
 # selenium_maven
-Примеры тестов на Java (Selenium + Maven)
+Автотесты написаны с использованием Selenium Webdriver и Java. Создан Maven проект с подключенными библиотеками. 
