@@ -9,4 +9,3 @@
 - Selenium Webdriver 
 - Java 
 - Бибилиотека для модульного тестирования JUnit
-
