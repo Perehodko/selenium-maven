@@ -1,4 +1,4 @@
-Тестируемые сайт:
+Тестируемые сайты:
 - https://www.delivery-club.ru/
 - https://www.google.com/
 - https://www.wikipedia.org/
